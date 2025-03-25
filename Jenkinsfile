@@ -4,7 +4,7 @@ pipeline {
     environment {
         DOCKER_IMAGE = 'yphalak/nginx-k8s:latest'   // Replace with your Docker Hub username
         DOCKER_CREDENTIALS = 'docker-hub-credentials'  // Jenkins Docker Hub credentials ID
-        KUBECONFIG = '/home/jenkins/.kube/config'    // Path to Kubeconfig file
+        KUBECONFIG = '/var/jenkins_home/.kube/config'    // Path to Kubeconfig file
     }
 
     stages {
